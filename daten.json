@@ -1,0 +1,2277 @@
+{
+  "lastUpdated": "2026-03-10T12:00:00.000Z",
+  "meta": {
+    "totalEntries": 378,
+    "generated": "Deutschlandkarte Admin-Export"
+  },
+  "entries": [
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Alb-Donau-Kreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Baden-Baden",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Biberach",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Bodenseekreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Breisgau-Hochschwarzwald",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Böblingen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Calw",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Emmendingen",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Enzkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Esslingen",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Freiburg im Breisgau",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Freudenstadt",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Göppingen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Heidelberg",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Heidenheim",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Heilbronn",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Hohenlohekreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Karlsruhe",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Konstanz",
+      "kategorie": "undefiniert",
+      "notizen": "Gutachten in Auftrag gegeben"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Ludwigsburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Lörrach",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Main-Tauber-Kreis",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Mannheim",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Neckar-Odenwald-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Ortenaukreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Ostalbkreis",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Pforzheim",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Rastatt",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Ravensburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Rems-Murr-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Reutlingen",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Rhein-Neckar-Kreis",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Rottweil",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Schwarzwald-Baar-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Schwäbisch Hall",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Sigmaringen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Stuttgart",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Tuttlingen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Tübingen",
+      "kategorie": "undefiniert",
+      "notizen": "Gutachten in Auftrag gegeben"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Ulm",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Waldshut",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "landkreis": "Zollernalbkreis",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Aichach-Friedberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Altötting",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Amberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Amberg-Sulzbach",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Ansbach",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Aschaffenburg",
+      "kategorie": "undefiniert",
+      "notizen": "Gutachten in Auftrag gegeben"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Augsburg",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Bad Kissingen",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Bad Tölz-Wolfratshausen",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Bamberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Bayreuth",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Berchtesgadener Land",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Cham",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Coburg",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Dachau",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Deggendorf",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Dillingen a.d.Donau",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Dingolfing-Landau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Donau-Ries",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Ebersberg",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Eichstätt",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Erding",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Erlangen",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Erlangen-Höchstadt",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Forchheim",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Freising",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Freyung-Grafenau",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Fürstenfeldbruck",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Fürth",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Garmisch-Partenkirchen",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Günzburg",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Haßberge",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Hof",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Ingolstadt",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kaufbeuren",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kelheim",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kempten",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kitzingen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kronach",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Kulmbach",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Landsberg am Lech",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Landshut",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Lichtenfels",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Lindau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Main-Spessart",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Memmingen",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Miesbach",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Miltenberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Mühldorf a.Inn",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "München",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Neu-Ulm",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Neuburg-Schrobenhausen",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Neumarkt i.d.OPf.",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Neustadt a.d.Aisch-Bad Windsheim",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Neustadt a.d.Waldnaab",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Nürnberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Nürnberger Land",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Oberallgäu",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Ostallgäu",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Passau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Pfaffenhofen a.d.Ilm",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Regen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Regensburg",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Rhön-Grabfeld",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Rosenheim",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Roth",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Rottal-Inn",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Schwabach",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Schwandorf",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Schweinfurt",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Starnberg",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Straubing",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Straubing-Bogen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Tirschenreuth",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Traunstein",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Unterallgäu",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Weiden i.d.OPf.",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Weilheim-Schongau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Weißenburg-Gunzenhausen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Wunsiedel i.Fichtelgebirge",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Bayern",
+      "landkreis": "Würzburg",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Berlin",
+      "landkreis": "Berlin",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Barnim",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Brandenburg an der Havel",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Cottbus",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Dahme-Spreewald",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Elbe-Elster",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Frankfurt (Oder)",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Havelland",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Märkisch-Oderland",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Oberhavel",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Oberspreewald-Lausitz",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Oder-Spree",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Ostprignitz-Ruppin",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Potsdam",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Potsdam-Mittelmark",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Prignitz",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Spree-Neiße",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Teltow-Fläming",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Brandenburg",
+      "landkreis": "Uckermark",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Bremen",
+      "landkreis": "Bremen",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Bremen",
+      "landkreis": "Bremerhaven",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Hamburg",
+      "landkreis": "Hamburg",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Bergstraße",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Darmstadt",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Darmstadt-Dieburg",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Frankfurt am Main",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Fulda",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Gießen",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Groß-Gerau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Hersfeld-Rotenburg",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Hochtaunuskreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Kassel",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Lahn-Dill-Kreis",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Limburg-Weilburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Main-Kinzig-Kreis",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Main-Taunus-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Marburg-Biedenkopf",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Odenwaldkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Offenbach",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Offenbach am Main",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Rheingau-Taunus-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Schwalm-Eder-Kreis",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Vogelsbergkreis",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Waldeck-Frankenberg",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Werra-Meißner-Kreis",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Wetteraukreis",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Hessen",
+      "landkreis": "Wiesbaden",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Ludwigslust-Parchim",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Mecklenburgische Seenplatte",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Nordwestmecklenburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Rostock",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Schwerin",
+      "kategorie": "undefiniert",
+      "notizen": "Gutachten in Auftrag gegeben"
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Vorpommern-Greifswald",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "landkreis": "Vorpommern-Rügen",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Ammerland",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Aurich",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Braunschweig",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Celle",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Cloppenburg",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Cuxhaven",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Delmenhorst",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Diepholz",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Emden",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Emsland",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Friesland",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Gifhorn",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Goslar",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Grafschaft Bentheim",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Göttingen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Hameln-Pyrmont",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Harburg",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Heidekreis",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Helmstedt",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Hildesheim",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Holzminden",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Leer",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Lüchow-Dannenberg",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Lüneburg",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Nienburg (Weser)",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Northeim",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Oldenburg",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Osnabrück",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Osterholz",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Peine",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Region Hannover",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Rotenburg (Wümme)",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Salzgitter",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Schaumburg",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Stade",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Uelzen",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Vechta",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Verden",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Wesermarsch",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Wilhelmshaven",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Wittmund",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Wolfenbüttel",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "landkreis": "Wolfsburg",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Aachen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Bielefeld",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Bochum",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Bonn",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Borken",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Bottrop",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Coesfeld",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Dortmund",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Duisburg",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Düren",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Düsseldorf",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Ennepe-Ruhr-Kreis",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Essen",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Euskirchen",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Gelsenkirchen",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Gütersloh",
+      "kategorie": "undefiniert",
+      "notizen": "Gutachten in Auftrag gegeben"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Hagen",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Hamm",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Heinsberg",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Herford",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Herne",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Hochsauerlandkreis",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Höxter",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Kleve",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Krefeld",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Köln",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Leverkusen",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Lippe",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Mettmann",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Minden-Lübbecke",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Märkischer Kreis",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Mönchengladbach",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Mülheim an der Ruhr",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Münster",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Oberbergischer Kreis",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Oberhausen",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Olpe",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Paderborn",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Recklinghausen",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Remscheid",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Rhein-Erft-Kreis",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Rhein-Kreis Neuss",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Rhein-Sieg-Kreis",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Rheinisch-Bergischer Kreis",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Siegen-Wittgenstein",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Soest",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Solingen",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Steinfurt",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Unna",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Viersen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Warendorf",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Wesel",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "landkreis": "Wuppertal",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Ahrweiler",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Altenkirchen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Alzey-Worms",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Bad Dürkheim",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Bad Kreuznach",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Bernkastel-Wittlich",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Birkenfeld",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Cochem-Zell",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Donnersbergkreis",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Eifelkreis Bitburg-Prüm",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Frankenthal",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Germersheim",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Kaiserslautern",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Koblenz",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Kusel",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Landau in der Pfalz",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Ludwigshafen am Rhein",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Mainz",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Mainz-Bingen",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Mayen-Koblenz",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Neustadt an der Weinstraße",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Neuwied",
+      "kategorie": "undefiniert",
+      "notizen": "Interimsvertrag bis Klärung"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Pirmasens",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Rhein-Hunsrück-Kreis",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Rhein-Lahn-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Rhein-Pfalz-Kreis",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Speyer",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Modernisierung läuft seit Q3/2024"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Südliche Weinstraße",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Südwestpfalz",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Trier",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Trier-Saarburg",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Vulkaneifel",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Westerwaldkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Worms",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "landkreis": "Zweibrücken",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "Merzig-Wadern",
+      "kategorie": "Open-House",
+      "notizen": "Zuschlag erwartet Q3/2026"
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "Neunkirchen",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "Regionalverband Saarbrücken",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "Saarlouis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "Saarpfalz-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Saarland",
+      "landkreis": "St. Wendel",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Bautzen",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Chemnitz",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Dresden",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Erzgebirgskreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Konzession läuft 2028 aus"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Görlitz",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Leipzig",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Meißen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Mittelsachsen",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Nordsachsen",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Sächsische Schweiz-Osterzgebirge",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Vogtlandkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Sachsen",
+      "landkreis": "Zwickau",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Altmarkkreis Salzwedel",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Anhalt-Bitterfeld",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Burgenlandkreis",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Börde",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Dessau-Roßlau",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Halle",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Harz",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Jerichower Land",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Magdeburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Mansfeld-Südharz",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Saalekreis",
+      "kategorie": "undefiniert",
+      "notizen": "Politische Entscheidung ausstehend"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Salzlandkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Eigenbetrieb mit 45 Mitarbeitern"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Stendal",
+      "kategorie": "Open-House",
+      "notizen": "Bewerbungsfrist endet 30.06.2026"
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "landkreis": "Wittenberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Dithmarschen",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Flensburg",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Herzogtum Lauenburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Kiel",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Lübeck",
+      "kategorie": "Open-House",
+      "notizen": "Marktanalyse abgeschlossen"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Neumünster",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Nordfriesland",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Ostholstein",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Kommunaler Eigenbetrieb, Vertrag bis 2030"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Pinneberg",
+      "kategorie": "Open-House",
+      "notizen": "Open-House-Verfahren gestartet Q2/2025"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Plön",
+      "kategorie": "Konzessionär",
+      "notizen": "Veolia, Vertrag bis 2029"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Rendsburg-Eckernförde",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Schleswig-Flensburg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Segeberg",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Steinburg",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "landkreis": "Stormarn",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Altenburger Land",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Eichsfeld",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Wirtschaftlich stabil"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Eisenach",
+      "kategorie": "Open-House",
+      "notizen": "Vergabeverfahren läuft seit 01/2025"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Erfurt",
+      "kategorie": "Konzessionär",
+      "notizen": "Remondis, Vertrag bis 2031"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Gera",
+      "kategorie": "undefiniert",
+      "notizen": "Bestandsaufnahme läuft"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Gotha",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Greiz",
+      "kategorie": "Konzessionär",
+      "notizen": "ALBA Group, Verlängerung in Prüfung"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Hildburghausen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Ilm-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Städtischer Eigenbetrieb seit 2018"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Jena",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Kyffhäuserkreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Nordhausen",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Saale-Holzland-Kreis",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Saale-Orla-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Seit 2021 als Eigenbetrieb geführt"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Saalfeld-Rudolstadt",
+      "kategorie": "undefiniert",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Schmalkalden-Meiningen",
+      "kategorie": "Konzessionär",
+      "notizen": "PreZero, Vertrag bis 2027"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Sonneberg",
+      "kategorie": "Open-House",
+      "notizen": "3 Bewerber im Verfahren"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Suhl",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Sömmerda",
+      "kategorie": "undefiniert",
+      "notizen": "Status noch in Klärung"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Unstrut-Hainich-Kreis",
+      "kategorie": "Eigenbetrieb",
+      "notizen": "Rekommunalisierung abgeschlossen 2022"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Wartburgkreis",
+      "kategorie": "Konzessionär",
+      "notizen": "Privatwirtschaftlicher Betreiber seit 2019"
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Weimar",
+      "kategorie": "Open-House",
+      "notizen": ""
+    },
+    {
+      "bundesland": "Thüringen",
+      "landkreis": "Weimarer Land",
+      "kategorie": "Konzessionär",
+      "notizen": ""
+    }
+  ]
+}
