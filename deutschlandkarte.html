@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interaktive Deutschlandkarte</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --eigen:#2E7D32;--open:#1565C0;--konz:#E65100;--undef:#78909C;
+  --nodata:#CFD8DC;--bg:#f0f2f5;--card:#fff;--text:#263238;
+  --textl:#546E7A;--border:#dde1e6;
+}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex;flex-direction:column}
+header{background:#fff;border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+header h1{font-size:1.25rem;font-weight:700;display:flex;align-items:center;gap:10px}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{padding:8px 18px;border:none;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.btn-primary{background:#1a73e8;color:#fff}.btn-primary:hover{background:#1557b0}
+.btn-secondary{background:#e8eaed;color:var(--text)}.btn-secondary:hover{background:#d2d5d9}
+.btn-success{background:#2E7D32;color:#fff}.btn-success:hover{background:#1B5E20}
+.btn-back{background:#f1f3f4;color:var(--text);display:none}.btn-back:hover{background:#dde1e6}
+.btn-admin{background:#7B1FA2;color:#fff}.btn-admin:hover{background:#6A1B9A}
+.upload-wrap{position:relative;overflow:hidden}
+.upload-wrap input[type=file]{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.admin-only{display:none}
+main{flex:1;display:flex;overflow:hidden}
+#map-container{flex:1;position:relative;overflow:hidden;background:var(--bg)}
+#map-container svg{width:100%;height:100%}
+#sidebar{width:380px;background:var(--card);border-left:1px solid var(--border);display:flex;flex-direction:column;overflow-y:auto}
+.sidebar-header{padding:20px 24px 12px;border-bottom:1px solid var(--border)}
+.sidebar-header h2{font-size:1.1rem;font-weight:700;margin-bottom:4px}
+.sidebar-header p{font-size:.82rem;color:var(--textl)}
+.info-section{padding:16px 24px}
+.info-field{margin-bottom:16px}
+.info-field label{display:block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--textl);margin-bottom:4px}
+.badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.82rem;font-weight:600;color:#fff}
+.badge-eigen{background:var(--eigen)}.badge-open{background:var(--open)}
+.badge-konz{background:var(--konz)}.badge-undef{background:var(--undef)}
+.badge-nodata{background:var(--nodata);color:var(--textl)}
+.notes-box{background:#f8f9fa;border:1px solid var(--border);border-radius:8px;padding:12px;font-size:.9rem;line-height:1.6;min-height:60px;white-space:pre-wrap}
+#legend{background:#fff;border-top:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:center;font-size:.82rem}
+.legend-item{display:flex;align-items:center;gap:6px}
+.legend-dot{width:14px;height:14px;border-radius:4px}
+#tooltip{position:fixed;background:rgba(38,50,56,.92);color:#fff;padding:8px 14px;border-radius:8px;font-size:.82rem;pointer-events:none;z-index:100;display:none;max-width:280px;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+#tooltip .tt-name{font-weight:600;margin-bottom:2px}
+#tooltip .tt-status{font-size:.75rem;opacity:.85}
+#loading{position:absolute;inset:0;background:rgba(240,242,245,.9);display:flex;align-items:center;justify-content:center;z-index:50;flex-direction:column;gap:12px}
+.spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:#1a73e8;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#loading p{font-size:.9rem;color:var(--textl)}
+.stats{padding:16px 24px;border-bottom:1px solid var(--border)}
+.stats h3{font-size:.85rem;font-weight:600;margin-bottom:10px;color:var(--textl)}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat-item{background:#f8f9fa;padding:10px 12px;border-radius:8px;text-align:center}
+.stat-item .num{font-size:1.4rem;font-weight:700}
+.stat-item .lbl{font-size:.7rem;color:var(--textl);margin-top:2px}
+.stat-eigen .num{color:var(--eigen)}.stat-open .num{color:var(--open)}
+.stat-konz .num{color:var(--konz)}.stat-undef .num{color:var(--undef)}
+.search-box{padding:12px 24px;border-bottom:1px solid var(--border)}
+.search-box input{width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;outline:none}
+.search-box input:focus{border-color:#1a73e8;box-shadow:0 0 0 2px rgba(26,115,232,.15)}
+.district-list{padding:8px 12px;overflow-y:auto;flex:1}
+.district-item{padding:10px 14px;border-radius:8px;cursor:pointer;display:flex;align-items:center;transition:background .15s;font-size:.85rem}
+.district-item:hover{background:#f1f3f4}
+.district-item .di-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+.district-item .di-name{flex:1;margin-left:10px}
+.welcome-msg{padding:40px 24px;text-align:center;color:var(--textl)}
+.welcome-msg svg{width:64px;height:64px;margin-bottom:16px;opacity:.4}
+.welcome-msg p{font-size:.9rem;line-height:1.6}
+.updated-info{font-size:.72rem;color:var(--textl);margin-top:12px}
+path.state{stroke:#fff;stroke-width:1.5;cursor:pointer;transition:opacity .2s}
+path.state:hover{opacity:.8;stroke-width:2}
+path.district{stroke:#fff;cursor:pointer;transition:opacity .2s}
+path.district:hover{opacity:.8}
+path.district.selected{stroke:#1a73e8}
+.state-label{font-size:11px;fill:#37474f;font-weight:600;pointer-events:none;text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linecap:round;stroke-linejoin:round}
+#status-bar{background:#E3F2FD;border-bottom:1px solid #90CAF9;padding:8px 24px;font-size:.8rem;color:#1565C0;display:none;align-items:center;gap:12px}
+#status-bar.warn{background:#FFF3E0;border-color:#FFE0B2;color:#E65100}
+#status-bar.error{background:#FFEBEE;border-color:#FFCDD2;color:#C62828}
+#status-bar.success{background:#E8F5E9;border-color:#C8E6C9;color:#2E7D32}
+#status-bar button{font-size:.72rem;padding:2px 10px;cursor:pointer;border:1px solid currentColor;border-radius:4px;background:#fff;color:inherit;margin-left:auto}
+#admin-banner{background:#F3E5F5;border-bottom:1px solid #CE93D8;padding:6px 24px;font-size:.78rem;color:#7B1FA2;display:none;align-items:center;gap:8px}
+@media(max-width:900px){#sidebar{width:300px}}
+@media(max-width:700px){main{flex-direction:column}#sidebar{width:100%;max-height:50vh;border-left:none;border-top:1px solid var(--border)}}
+</style>
+</head>
+<body>
+<div id="admin-banner">🔑 Admin-Modus aktiv — Änderungen werden erst durch „daten.json speichern" + GitHub-Commit dauerhaft</div>
+<div id="status-bar"><span id="status-msg"></span><button onclick="this.parentElement.style.display='none'">×</button></div>
+<header>
+  <h1><span>🗺️</span> Interaktive Deutschlandkarte</h1>
+  <div class="controls">
+    <!-- Admin-only controls -->
+    <div class="upload-wrap admin-only">
+      <button class="btn btn-admin">📂 Excel importieren</button>
+      <input type="file" id="file-input" accept=".xlsx,.xls,.csv">
+    </div>
+    <button class="btn btn-success admin-only" id="save-json-btn" style="display:none">💾 daten.json speichern</button>
+    <button class="btn btn-secondary admin-only" id="export-btn">📥 Vorlage herunterladen</button>
+    <!-- Always visible -->
+    <button class="btn btn-back" id="back-btn">← Zurück</button>
+  </div>
+</header>
+<main>
+  <div id="map-container">
+    <svg id="map"></svg>
+    <div id="loading"><div class="spinner"></div><p>Karte wird geladen…</p></div>
+  </div>
+  <div id="sidebar">
+    <div id="welcome" class="welcome-msg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+      <p><strong>Willkommen!</strong><br><br>Klicken Sie auf ein Bundesland, um dessen Landkreise anzuzeigen.</p>
+      <div class="updated-info" id="updated-info"></div>
+    </div>
+    <div id="state-view" style="display:none">
+      <div class="sidebar-header"><h2 id="sv-title"></h2><p id="sv-subtitle"></p></div>
+      <div class="stats">
+        <h3>Übersicht</h3>
+        <div class="stat-grid">
+          <div class="stat-item stat-eigen"><div class="num" id="st-eigen">0</div><div class="lbl">Eigenbetrieb</div></div>
+          <div class="stat-item stat-open"><div class="num" id="st-open">0</div><div class="lbl">Open-House</div></div>
+          <div class="stat-item stat-konz"><div class="num" id="st-konz">0</div><div class="lbl">Konzessionär</div></div>
+          <div class="stat-item stat-undef"><div class="num" id="st-undef">0</div><div class="lbl">Undefiniert</div></div>
+        </div>
+      </div>
+      <div class="search-box"><input type="text" id="search-input" placeholder="Landkreis suchen…"></div>
+      <div class="district-list" id="district-list"></div>
+    </div>
+    <div id="district-detail" style="display:none">
+      <div class="sidebar-header"><h2 id="dd-title"></h2><p id="dd-subtitle"></p></div>
+      <div class="info-section">
+        <div class="info-field"><label>Kategorie</label><div class="value"><span class="badge" id="dd-badge">—</span></div></div>
+        <div class="info-field"><label>Notizen</label><div class="notes-box" id="dd-notes">Keine Daten vorhanden.</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+<div id="legend">
+  <span style="font-weight:600;color:var(--textl)">Legende:</span>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--eigen)"></div>Eigenbetrieb</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--open)"></div>Open-House</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--konz)"></div>Konzessionär</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--undef)"></div>Undefiniert</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--nodata)"></div>Keine Daten</div>
+</div>
+<div id="tooltip"></div>
+
+<script>
+window._libsReady = { d3: false, xlsx: false };
+function checkLibs() {
+  if (typeof d3 !== 'undefined') window._libsReady.d3 = true;
+  if (typeof XLSX !== 'undefined') window._libsReady.xlsx = true;
+}
+function loadScript(src, cb) {
+  const s = document.createElement('script'); s.src = src; s.onload = cb; s.onerror = cb; document.head.appendChild(s);
+}
+</script>
+<script src="https://d3js.org/d3.v7.min.js" onload="window._libsReady.d3=true" onerror="loadScript('https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js',function(){if(typeof d3!=='undefined')window._libsReady.d3=true})"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" onload="window._libsReady.xlsx=true" onerror="loadScript('https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js',function(){if(typeof XLSX!=='undefined')window._libsReady.xlsx=true})"></script>
+
+<script>
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  KONFIGURATION — hier anpassen!                             ║
+// ╚══════════════════════════════════════════════════════════════╝
+const ADMIN_PASSWORD = 'admin123';   // URL: ?admin=admin123
+// ════════════════════════════════════════════════════════════════
+
+function showStatus(type, msg) {
+  const bar = document.getElementById('status-bar');
+  bar.className = type; document.getElementById('status-msg').textContent = msg; bar.style.display = 'flex';
+}
+
+function waitForLibs(cb, attempt) {
+  attempt = attempt || 0; checkLibs();
+  if (window._libsReady.d3 && window._libsReady.xlsx) return cb();
+  if (attempt > 50) {
+    let m = [];
+    if (!window._libsReady.d3) m.push('D3.js');
+    if (!window._libsReady.xlsx) m.push('SheetJS');
+    showStatus('error', 'Bibliotheken nicht geladen: ' + m.join(', '));
+    document.getElementById('loading').innerHTML = '<div style="text-align:center;padding:40px;color:#c62828"><p><strong>Fehler:</strong> '+m.join(', ')+' nicht geladen.<br>Internetverbindung prüfen und neu laden.</p></div>';
+    return;
+  }
+  setTimeout(() => waitForLibs(cb, attempt + 1), 200);
+}
+
+waitForLibs(function() { initApp(); });
+
+function initApp() {
+
+// ===== ADMIN MODE =====
+const urlParams = new URLSearchParams(window.location.search);
+const isAdmin = urlParams.get('admin') === ADMIN_PASSWORD;
+
+if (isAdmin) {
+  document.querySelectorAll('.admin-only').forEach(el => el.style.display = '');
+  document.getElementById('admin-banner').style.display = 'flex';
+  console.log('[Karte] Admin-Modus aktiviert');
+}
+
+// ===== CONFIG =====
+const COLORS = { 'eigenbetrieb':'#2E7D32','open-house':'#1565C0','konzessionär':'#E65100','undefiniert':'#78909C' };
+const BADGE_CLASS = { 'eigenbetrieb':'badge-eigen','open-house':'badge-open','konzessionär':'badge-konz','undefiniert':'badge-undef' };
+const DEFAULT_COLOR = '#CFD8DC';
+const STATE_ABBR = {'Schleswig-Holstein':'SH','Mecklenburg-Vorpommern':'MV','Nordrhein-Westfalen':'NRW','Baden-Württemberg':'BW','Niedersachsen':'NDS','Rheinland-Pfalz':'RP','Sachsen-Anhalt':'ST','Brandenburg':'BB','Thüringen':'TH','Sachsen':'SN','Hessen':'HE','Bayern':'BY','Saarland':'SL','Berlin':'BE','Hamburg':'HH','Bremen':'HB'};
+
+const GEO_SOURCES = {
+  states: [
+    'https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/2_bundeslaender/4_niedrig.geo.json',
+    'https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/2_bundeslaender/3_mittel.geo.json'
+  ],
+  districts: [
+    'https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/4_kreise/4_niedrig.geo.json',
+    'https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/4_kreise/3_mittel.geo.json'
+  ]
+};
+
+// ===== STATE =====
+let statesGeo = null, districtsGeo = null;
+let excelData = {};
+let lastUpdated = null;
+let currentView = 'states', currentStateName = null, currentZoomScale = 1, selectedDistrictPath = null;
+
+let propConfig = { stateName: null, distName: null, distState: null, distType: null };
+
+// ===== D3 SETUP =====
+const svg = d3.select('#map');
+const gPaths = svg.append('g').attr('class','paths-layer');
+const gLabels = svg.append('g').attr('class','labels-layer');
+const W = 800, H = 1000;
+svg.attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio', 'xMidYMid meet');
+const projection = d3.geoMercator().center([10.4, 51.15]).scale(4200).translate([W/2, H/2]);
+const pathGen = d3.geoPath().projection(projection);
+
+// ===== TOOLTIP =====
+const ttEl = document.getElementById('tooltip');
+function showTT(e,name,sub) {
+  ttEl.innerHTML = '<div class="tt-name">'+esc(name)+'</div>'+(sub?'<div class="tt-status">'+esc(sub)+'</div>':'');
+  ttEl.style.display='block'; moveTT(e);
+}
+function moveTT(e) {
+  let x=e.clientX+14,y=e.clientY-10;
+  if(x+260>window.innerWidth)x=e.clientX-260;
+  if(y+60>window.innerHeight)y=e.clientY-60;
+  ttEl.style.left=x+'px';ttEl.style.top=y+'px';
+}
+function hideTT(){ttEl.style.display='none'}
+
+// ===== HELPERS =====
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function norm(s){return(s||'').toLowerCase().replace(/\s+/g,' ').trim()}
+function simplify(s) {
+  return norm(s)
+    .replace(/,?\s*(stadt|landeshauptstadt|hansestadt|landkreis|kreisfreie stadt|freie und hansestadt|kreis)\s*$/g, '')
+    .replace(/,?\s*(landkreis|kreis)\s*$/g, '')
+    .replace(/[,.\-()]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+// ===== AUTO-DETECT PROPERTIES =====
+function detectProps(features, type) {
+  if (!features || !features.length) return;
+  const sample = features[0].properties;
+  const keys = Object.keys(sample);
+  console.log(`[Karte] ${type} Properties:`, keys, 'Sample:', sample);
+  if (type === 'states') {
+    propConfig.stateName = keys.find(k=>k==='NAME_1')||keys.find(k=>k==='name')||keys.find(k=>k==='GEN')||keys.find(k=>k==='Name')||keys[0];
+  }
+  if (type === 'districts') {
+    propConfig.distName = keys.find(k=>k==='NAME_3')||keys.find(k=>k==='GEN')||keys.find(k=>k==='name')||keys.find(k=>k==='Name')||keys.find(k=>k==='NAME_2')||keys.find(k=>k==='NAME_1')||keys[0];
+    propConfig.distState = keys.find(k=>k==='NAME_1')||keys.find(k=>k==='name_1')||null;
+    propConfig.distType = keys.find(k=>k==='TYPE_3')||keys.find(k=>k==='ENGTYPE_3')||keys.find(k=>k==='BEZ')||null;
+    if (propConfig.distName===propConfig.distState && keys.includes('NAME_3')) propConfig.distName='NAME_3';
+  }
+}
+
+function getStateName(f){return f.properties[propConfig.stateName]||'Unbekannt'}
+function getDistName(f){return f.properties[propConfig.distName]||'Unbekannt'}
+function getDistState(f){return(propConfig.distState&&f.properties[propConfig.distState])||''}
+function getDistType(f){return(propConfig.distType&&f.properties[propConfig.distType])||''}
+
+// ===== FUZZY MATCHING =====
+let excelNormIndex={}, excelSimpleIndex={};
+function rebuildExcelIndexes() {
+  excelNormIndex={}; excelSimpleIndex={};
+  for (const [key,val] of Object.entries(excelData)) {
+    excelNormIndex[key]=val;
+    excelSimpleIndex[simplify(val.landkreis)]=val;
+  }
+}
+
+function findData(geoName) {
+  const n=norm(geoName);
+  if(excelNormIndex[n]) return excelNormIndex[n];
+  const s=simplify(geoName);
+  if(excelSimpleIndex[s]) return excelSimpleIndex[s];
+  for(const [key,val] of Object.entries(excelNormIndex)){
+    if(n.includes(key)||key.includes(n)) return val;
+  }
+  const fw=s.split(/\s/)[0];
+  if(fw.length>3){
+    for(const [key,val] of Object.entries(excelSimpleIndex)){
+      if(key.split(/\s/)[0]===fw) return val;
+    }
+  }
+  return null;
+}
+
+function getColor(geoName){const d=findData(geoName);return d?COLORS[norm(d.kategorie)]||DEFAULT_COLOR:DEFAULT_COLOR}
+function getStatusText(geoName){const d=findData(geoName);return d?(d.kategorie||'Keine Kategorie'):'Keine Daten'}
+
+// ===== RENDERING: STATES =====
+function renderStates() {
+  currentView='states'; currentStateName=null; currentZoomScale=1;
+  document.getElementById('back-btn').style.display='none';
+  showPanel('welcome');
+  gPaths.selectAll('*').remove(); gLabels.selectAll('*').remove();
+  gPaths.attr('transform',''); gLabels.attr('transform','');
+  if(!statesGeo) return;
+
+  gPaths.selectAll('path.state').data(statesGeo.features).enter().append('path')
+    .attr('class','state').attr('d',pathGen)
+    .style('fill', d=>getStateAggColor(getStateName(d)))
+    .on('mouseenter',function(e,d){showTT(e,getStateName(d),getStateSummary(getStateName(d)))})
+    .on('mousemove',moveTT).on('mouseleave',hideTT)
+    .on('click',function(e,d){onStateClick(d)});
+
+  gLabels.selectAll('text.state-label').data(statesGeo.features).enter().append('text')
+    .attr('class','state-label')
+    .attr('x',d=>pathGen.centroid(d)[0]).attr('y',d=>pathGen.centroid(d)[1])
+    .text(d=>STATE_ABBR[getStateName(d)]||getStateName(d));
+
+  // Show updated info
+  const info = document.getElementById('updated-info');
+  if(lastUpdated) info.textContent = 'Datenstand: ' + new Date(lastUpdated).toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  else if(Object.keys(excelData).length>0) info.textContent = Object.keys(excelData).length + ' Landkreise geladen';
+  else info.textContent = '';
+}
+
+function getStateAggColor(stateName) {
+  if(!districtsGeo||Object.keys(excelData).length===0) return DEFAULT_COLOR;
+  const dists=districtsGeo.features.filter(f=>getDistState(f)===stateName);
+  if(!dists.length) return DEFAULT_COLOR;
+  const c={e:0,o:0,k:0,u:0};
+  dists.forEach(f=>{const d=findData(getDistName(f));if(!d)return;const cat=norm(d.kategorie);
+    if(cat==='eigenbetrieb')c.e++;else if(cat==='open-house')c.o++;else if(cat==='konzessionär')c.k++;else c.u++});
+  const max=Math.max(c.e,c.o,c.k,c.u);
+  if(max===0)return DEFAULT_COLOR;
+  if(c.e===max)return'#66BB6A';if(c.o===max)return'#42A5F5';if(c.k===max)return'#FFA726';return'#90A4AE';
+}
+
+function getStateSummary(stateName) {
+  if(!districtsGeo||Object.keys(excelData).length===0) return 'Klicken für Landkreise';
+  const dists=districtsGeo.features.filter(f=>getDistState(f)===stateName);
+  const total=dists.length, wd=dists.filter(f=>findData(getDistName(f))).length;
+  if(!total)return'Keine Landkreise';if(!wd)return`${total} Landkreise · Keine Daten`;
+  return`${total} Landkreise · ${wd} mit Daten`;
+}
+
+// ===== STATE CLICK =====
+function onStateClick(sf) {
+  currentStateName=getStateName(sf);
+  if(!districtsGeo){showLoading(true);loadDistricts().then(()=>{showLoading(false);if(districtsGeo)renderDistricts(currentStateName);else showStatus('error','Landkreise nicht ladbar.')})}
+  else renderDistricts(currentStateName);
+}
+
+// ===== RENDERING: DISTRICTS =====
+function renderDistricts(stateName) {
+  currentView='districts';
+  document.getElementById('back-btn').style.display='flex';
+  gPaths.selectAll('*').remove();gLabels.selectAll('*').remove();
+  const features=districtsGeo.features.filter(f=>getDistState(f)===stateName);
+  if(!features.length){
+    console.warn('[Karte] Keine Landkreise für "'+stateName+'"');
+    showStatus('warn','Keine Landkreise für "'+stateName+'" gefunden.');
+    showPanel('state-view');
+    document.getElementById('sv-title').textContent=stateName;
+    document.getElementById('sv-subtitle').textContent='Keine Geodaten';return;
+  }
+  const fc={type:'FeatureCollection',features};
+  const bounds=pathGen.bounds(fc);
+  const dx=bounds[1][0]-bounds[0][0],dy=bounds[1][1]-bounds[0][1];
+  const cx=(bounds[0][0]+bounds[1][0])/2,cy=(bounds[0][1]+bounds[1][1])/2;
+  const scale=Math.min(W/dx,H/dy)*0.85; currentZoomScale=scale;
+  const tx=W/2-scale*cx,ty=H/2-scale*cy;
+  const transform=`translate(${tx},${ty})scale(${scale})`;
+  gPaths.attr('transform',transform);gLabels.attr('transform',transform);
+  const sw=Math.max(0.15,0.5/scale),swSel=Math.max(0.3,1.5/scale);
+
+  gPaths.selectAll('path.district').data(features).enter().append('path')
+    .attr('class','district').attr('d',pathGen)
+    .style('fill',d=>getColor(getDistName(d)))
+    .attr('stroke-width',sw)
+    .on('mouseenter',function(e,d){showTT(e,getDistName(d),getStatusText(getDistName(d)))})
+    .on('mousemove',moveTT).on('mouseleave',hideTT)
+    .on('click',function(e,d){
+      if(selectedDistrictPath){d3.select(selectedDistrictPath).classed('selected',false).attr('stroke-width',sw)}
+      selectedDistrictPath=this;d3.select(this).classed('selected',true).attr('stroke-width',swSel);
+      showDistrictDetail(d);
+    });
+  showPanel('state-view');
+  document.getElementById('sv-title').textContent=stateName;
+  document.getElementById('sv-subtitle').textContent=`${features.length} Landkreise / kreisfreie Städte`;
+  updateStats(features);populateDistrictList(features,sw,swSel);
+  document.getElementById('search-input').value='';
+}
+
+function showDistrictDetail(feature) {
+  const name=getDistName(feature),type=getDistType(feature),data=findData(name);
+  showPanel('district-detail');
+  document.getElementById('dd-title').textContent=name;
+  document.getElementById('dd-subtitle').textContent=(type?type+' · ':'')+(currentStateName||'');
+  const badge=document.getElementById('dd-badge'),notes=document.getElementById('dd-notes');
+  if(data){const k=norm(data.kategorie);badge.textContent=data.kategorie||'Keine Kategorie';badge.className='badge '+(BADGE_CLASS[k]||'badge-nodata');notes.textContent=data.notizen||'Keine Notizen vorhanden.'}
+  else{badge.textContent='Keine Daten';badge.className='badge badge-nodata';notes.textContent='Keine Daten vorhanden.'}
+}
+
+// ===== SIDEBAR =====
+function updateStats(features) {
+  let e=0,o=0,k=0,u=0;
+  features.forEach(f=>{const d=findData(getDistName(f));if(!d)return;const c=norm(d.kategorie);
+    if(c==='eigenbetrieb')e++;else if(c==='open-house')o++;else if(c==='konzessionär')k++;else u++});
+  document.getElementById('st-eigen').textContent=e;document.getElementById('st-open').textContent=o;
+  document.getElementById('st-konz').textContent=k;document.getElementById('st-undef').textContent=u;
+}
+
+function populateDistrictList(features,sw,swSel) {
+  const list=document.getElementById('district-list');
+  const sorted=[...features].sort((a,b)=>getDistName(a).localeCompare(getDistName(b),'de'));
+  function render(filter){
+    list.innerHTML='';
+    sorted.forEach(f=>{const name=getDistName(f);
+      if(filter&&!norm(name).includes(norm(filter)))return;
+      const div=document.createElement('div');div.className='district-item';
+      div.innerHTML=`<div class="di-dot" style="background:${getColor(name)}"></div><div class="di-name">${esc(name)}</div>`;
+      div.addEventListener('click',()=>{
+        const p=gPaths.selectAll('path.district').filter(d=>getDistName(d)===name).node();
+        if(p){if(selectedDistrictPath)d3.select(selectedDistrictPath).classed('selected',false).attr('stroke-width',sw);
+        selectedDistrictPath=p;d3.select(p).classed('selected',true).attr('stroke-width',swSel);showDistrictDetail(f)}
+      });list.appendChild(div)});
+    if(!list.children.length)list.innerHTML='<div style="padding:20px;text-align:center;color:var(--textl)">Keine Treffer</div>';
+  }
+  render('');document.getElementById('search-input').oninput=function(){render(this.value)};
+}
+
+function showPanel(id){['welcome','state-view','district-detail'].forEach(p=>{document.getElementById(p).style.display=p===id?'':'none'})}
+
+// ===== DATA LOADING =====
+function showLoading(show){document.getElementById('loading').style.display=show?'flex':'none'}
+
+async function fetchWithFallback(urls) {
+  for(const url of urls){try{const r=await fetch(url);if(!r.ok)throw new Error('HTTP '+r.status);
+    const data=await r.json();if(data&&data.features&&data.features.length>0){console.log('[Karte] Geladen:',url,'('+data.features.length+')');return data}}catch(e){console.warn('[Karte] Fehler:',url,e.message)}}
+  return null;
+}
+
+// ===== LOAD PERSISTENT DATA (daten.json) =====
+async function loadPersistentData() {
+  try {
+    const resp = await fetch('daten.json?t=' + Date.now());
+    if (!resp.ok) { console.log('[Karte] Keine daten.json gefunden (HTTP '+resp.status+') — Karte startet ohne Daten'); return false; }
+    const json = await resp.json();
+    if (!json || !json.entries || !json.entries.length) { console.log('[Karte] daten.json ist leer'); return false; }
+
+    excelData = {};
+    json.entries.forEach(entry => {
+      if (entry.landkreis) {
+        excelData[norm(entry.landkreis)] = {
+          bundesland: entry.bundesland || '',
+          landkreis: entry.landkreis,
+          kategorie: entry.kategorie || '',
+          notizen: entry.notizen || ''
+        };
+      }
+    });
+    rebuildExcelIndexes();
+    lastUpdated = json.lastUpdated || null;
+    console.log(`[Karte] daten.json geladen: ${json.entries.length} Einträge, Stand: ${lastUpdated}`);
+    showStatus('success', `✓ ${json.entries.length} Landkreise aus daten.json geladen`);
+    setTimeout(() => document.getElementById('status-bar').style.display='none', 4000);
+    return true;
+  } catch(e) {
+    console.log('[Karte] daten.json nicht verfügbar:', e.message);
+    return false;
+  }
+}
+
+async function loadStates() {
+  try{statesGeo=await fetchWithFallback(GEO_SOURCES.states);if(!statesGeo)throw new Error('GeoJSON nicht verfügbar');
+    detectProps(statesGeo.features,'states');renderStates();return true}
+  catch(err){document.getElementById('loading').innerHTML='<div style="text-align:center;padding:40px;color:#c62828"><p><strong>Karte nicht ladbar.</strong><br>Internetverbindung prüfen.<br><small>'+esc(err.message)+'</small></p></div>';return false}
+}
+
+async function loadDistricts() {
+  if(districtsGeo)return;
+  try{districtsGeo=await fetchWithFallback(GEO_SOURCES.districts);if(!districtsGeo)throw new Error('Nicht verfügbar');
+    detectProps(districtsGeo.features,'districts');
+    console.log('[Karte] '+districtsGeo.features.length+' Landkreise geladen');
+    if(currentView==='states'&&Object.keys(excelData).length>0)renderStates()}
+  catch(err){console.error('[Karte] Landkreis-Fehler:',err)}
+}
+
+// ===== ADMIN: EXCEL IMPORT =====
+document.getElementById('file-input').addEventListener('change', function(e) {
+  if (!isAdmin) return;
+  const file=e.target.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=function(ev){
+    try{
+      const wb=XLSX.read(ev.target.result,{type:'array'});
+      let sn=wb.SheetNames.find(n=>norm(n)==='daten')||wb.SheetNames.find(n=>norm(n)!=='anleitung')||wb.SheetNames[0];
+      const rows=XLSX.utils.sheet_to_json(wb.Sheets[sn],{defval:''});
+      if(!rows.length){showStatus('warn','Blatt "'+sn+'" ist leer.');return}
+      excelData={};let imp=0;
+      rows.forEach(row=>{
+        const lk=row['Landkreis']||row['landkreis']||row['LANDKREIS']||row['Kreis']||row['Name']||'';
+        const kat=row['Kategorie']||row['kategorie']||row['KATEGORIE']||row['Status']||'';
+        const note=row['Notizen']||row['notizen']||row['NOTIZEN']||row['Info']||row['Bemerkungen']||'';
+        const bl=row['Bundesland']||row['bundesland']||row['BUNDESLAND']||'';
+        if(lk){excelData[norm(lk)]={bundesland:bl,landkreis:lk,kategorie:kat,notizen:note};imp++}
+      });
+      rebuildExcelIndexes(); lastUpdated=new Date().toISOString();
+      let matched=0;
+      if(districtsGeo)districtsGeo.features.forEach(f=>{if(findData(getDistName(f)))matched++});
+      showStatus('success',`✓ ${imp} importiert`+(districtsGeo?`, ${matched}/${districtsGeo.features.length} zugeordnet`:''));
+      // Show save button
+      document.getElementById('save-json-btn').style.display='flex';
+      if(currentView==='states')renderStates();else if(currentView==='districts'&&currentStateName)renderDistricts(currentStateName);
+    }catch(err){showStatus('error','Fehler: '+err.message)}
+  };
+  reader.readAsArrayBuffer(file);this.value='';
+});
+
+// ===== ADMIN: SAVE daten.json =====
+document.getElementById('save-json-btn').addEventListener('click', function() {
+  if (!isAdmin) return;
+  const entries = Object.values(excelData).map(d => ({
+    landkreis: d.landkreis,
+    bundesland: d.bundesland,
+    kategorie: d.kategorie,
+    notizen: d.notizen
+  }));
+  const json = {
+    lastUpdated: new Date().toISOString(),
+    meta: { totalEntries: entries.length, generated: 'Deutschlandkarte Admin-Export' },
+    entries: entries
+  };
+  const blob = new Blob([JSON.stringify(json, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'daten.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+  showStatus('success', '✓ daten.json heruntergeladen — jetzt ins GitHub-Repo committen!');
+});
+
+// ===== ADMIN: EXPORT TEMPLATE =====
+document.getElementById('export-btn').addEventListener('click', function() {
+  if (!isAdmin) return;
+  const wb=XLSX.utils.book_new();
+  const instr=[['Anleitung'],[''],['1. Blatt "Daten" ausfüllen'],['2. Kategorie: Eigenbetrieb / Open-House / Konzessionär / undefiniert'],
+    ['3. Notizen optional'],['4. Speichern und über Admin-Modus importieren'],[''],['Landkreisnamen in Spalte B NICHT ändern!']];
+  const wsI=XLSX.utils.aoa_to_sheet(instr);wsI['!cols']=[{wch:80}];
+  XLSX.utils.book_append_sheet(wb,wsI,'Anleitung');
+  const data=[['Bundesland','Landkreis','Kategorie','Notizen']];
+  if(districtsGeo&&districtsGeo.features.length>0){
+    const byState={};
+    districtsGeo.features.forEach(f=>{const st=getDistState(f)||'?',dn=getDistName(f);if(!byState[st])byState[st]=[];byState[st].push(dn)});
+    Object.keys(byState).sort((a,b)=>a.localeCompare(b,'de')).forEach(st=>{
+      byState[st].sort((a,b)=>a.localeCompare(b,'de')).forEach(dn=>{const ex=findData(dn);data.push([st,dn,ex?.kategorie||'',ex?.notizen||''])})});
+  }else{data.push(['','(Karte erst laden, dann erneut versuchen)','',''])}
+  const wsD=XLSX.utils.aoa_to_sheet(data);wsD['!cols']=[{wch:30},{wch:42},{wch:18},{wch:55}];
+  XLSX.utils.book_append_sheet(wb,wsD,'Daten');XLSX.writeFile(wb,'Landkreis_Vorlage.xlsx');
+});
+
+// ===== BACK =====
+document.getElementById('back-btn').addEventListener('click',function(){selectedDistrictPath=null;renderStates()});
+
+// ===== INIT =====
+async function start() {
+  showLoading(true);
+  // 1. Load persistent data first
+  await loadPersistentData();
+  // 2. Load state GeoJSON
+  const ok = await loadStates();
+  showLoading(false);
+  if (ok) {
+    // 3. Background-load districts (triggers re-render if data exists)
+    await loadDistricts();
+    // 4. Re-render states once districts loaded (needed for aggregate colors)
+    if (Object.keys(excelData).length > 0) renderStates();
+  }
+}
+
+start();
+
+} // end initApp
+</script>
+</body>
+</html>
